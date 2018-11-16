@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <math.h>
+
+int main (void){
+		float d, r, h;
+		
+		printf("Digite a altura: ");
+		scanf("%f", &h);
+		
+		r = 6378150;
+		d = sqrt(pow(h, 2)+2*r*h);
+		
+		printf("A distancia eh: %f", d);
+		
+		system("pause");
+
+
+}
+
